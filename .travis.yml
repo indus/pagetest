@@ -2,10 +2,9 @@ language: node_js
 node_js:
 - node
 after_success:
-- curl -o /tmp/travis-automerge https://raw.githubusercontent.com/cdown/travis-automerge/master/travis-automerge
-- chmod a+x /tmp/travis-automerge
-- BRANCHES_TO_MERGE_REGEX='^' BRANCH_TO_MERGE_INTO=master GITHUB_REPO=indus/pagetest
-  /tmp/travis-automerge
+- curl -o /tmp/automerge https://raw.githubusercontent.com/indus/pagetest/master/automerge
+- chmod a+x /tmp/automerge
+- BRANCH_TO_MERGE_INTO=master /tmp/automerge
 env:
   global:
     secure: dxqUCsiY8XqoLZJ+vKR13QllkTv3FtRbzqMOT2HYhgkRidpawWqjES29ijQnS6/+K6VhUxF8j4nUPpuvmaeshc5kWxtk0V+scfVEmbdiiwkoBRAG/4k49evMY8YMG3BSS/LR6dktcJL4svTNW0ofOZ9pQHa/9mDlMy+v7KiuelHofE0mTuUtmhoZLNRzuOkDhsdZmjjQc4n0iu66ikrBww+dGgvozk9K5VPwUakOKREtETeuzQ657hRT/867y5hU7hOrpAfnFTqG8oop/hrISOGOj77a/41Rgc23YjKGXYAUPLOXFnmAKfRjUJQvKnS1aA1rxyf/tmrVIZQR2z+a6uppS0DHiE8sBJyWGWffDOrgO8q9d8qzF99FlJtyKqXLOlc2vq3r9DeWNg7nWntEPStWHSLGzUCoHt9Y0Qyl7xwQPmdyQG0rURA8xgYktJY7a8wSD4V2X0RRFb3hgV4y+FVLdzU0rLx46hwgz8pwvYi+ddnuRjTmMpmwiUPLukreozHBmZS68vk53w24S8dDxEhgysbNSqm4D51sdUFCojXAlNqfEkVLzFQYjg+J3EeH8bFkFsf+g+tf47pR8dGNMHSTr3r5Gc0tY52uqiDf21PJWktvs00Gi3brrV7CPJVOkJZH4Pwg0+8yDnkP1i8MmfBW+NZ9eUoUwgQJN0h292w=
