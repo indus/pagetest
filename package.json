@@ -1,0 +1,19 @@
+{
+  "name": "pagetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indus/pagetest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/indus/pagetest/issues"
+  },
+  "homepage": "https://github.com/indus/pagetest#readme"
+}
