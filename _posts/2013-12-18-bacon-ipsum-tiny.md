@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Bacon Ipsum (Tiny)"
+title: "Bacon Ipsum ()"
 categories: loremipsum
 ---
 
