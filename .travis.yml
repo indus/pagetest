@@ -1,9 +1,11 @@
 language: node_js
 node_js:
-  - "node"
-env:
-  - secure: "VdFXRLQFIEk3IKsnf/l86ip3SqCkk3kMWfQpx4auzNSexVpqze/OQw2M1FL/EyK/kKy/7jb5c7kFTLY330Qcn0ZEe5J4Y3fZu8u9syyv3wsCOFfrwd7R36TD5HdfpCSpLZheYGNPIqSgD3o7t0aaT1Kl5y72pLC6hUelF/OJFg4X5wXqOvjnpYbeO3rxmv1d63kOy8Z/pr5esap7+puMuTnN0wh88PU0unsxsg0vna+NUUaBvhyviNT4k0Ou5x0klwCuAD1z7u16J7Qkz4ZTOlCsWSpL5Q3i614D3pIUaPVJhMMS2o1hta5/tJhqYqDIu1+KFn+Vf2CG6VQZurewcHExxoHmoMAU3FIUBaXwh06DrTx12qplVDfIcIS2020q1qQeAmX10qXsTbl4jI69qH8BAfXCAXano9AsUPaxffRen9Gu03aTl//nUeeYqjJ5ZOSb1la70k8IYn3RsVByUf8HwBZsRrS0pibGWDO8dNKR0/vhJ8iURXXj825qsRN7ZaPA46P/51huIlZ6iIdl/SKa5HE6zF7Y9mbDn+216p1SGJkHi2xSReykz02HhuYMskGcqU69Q8LPGxGsx3g76O2GGIL4hkBPrQdDQm/iuDxSrWQUGiJkKHRRZ8R4699vv4MGoOa+iJQY3HqgYFj/UVOEPZbi/FyWs2NGdlJnPaw="
+- node
 after_success:
-  - "curl -o /tmp/travis-automerge https://raw.githubusercontent.com/cdown/travis-automerge/master/travis-automerge"
-  - "chmod a+x /tmp/travis-automerge"
-  - "BRANCHES_TO_MERGE_REGEX='^' BRANCH_TO_MERGE_INTO=master GITHUB_REPO=indus/pagetest /tmp/travis-automerge"
+- curl -o /tmp/travis-automerge https://raw.githubusercontent.com/cdown/travis-automerge/master/travis-automerge
+- chmod a+x /tmp/travis-automerge
+- BRANCHES_TO_MERGE_REGEX='^' BRANCH_TO_MERGE_INTO=master GITHUB_REPO=indus/pagetest
+  /tmp/travis-automerge
+env:
+  global:
+    secure: dxqUCsiY8XqoLZJ+vKR13QllkTv3FtRbzqMOT2HYhgkRidpawWqjES29ijQnS6/+K6VhUxF8j4nUPpuvmaeshc5kWxtk0V+scfVEmbdiiwkoBRAG/4k49evMY8YMG3BSS/LR6dktcJL4svTNW0ofOZ9pQHa/9mDlMy+v7KiuelHofE0mTuUtmhoZLNRzuOkDhsdZmjjQc4n0iu66ikrBww+dGgvozk9K5VPwUakOKREtETeuzQ657hRT/867y5hU7hOrpAfnFTqG8oop/hrISOGOj77a/41Rgc23YjKGXYAUPLOXFnmAKfRjUJQvKnS1aA1rxyf/tmrVIZQR2z+a6uppS0DHiE8sBJyWGWffDOrgO8q9d8qzF99FlJtyKqXLOlc2vq3r9DeWNg7nWntEPStWHSLGzUCoHt9Y0Qyl7xwQPmdyQG0rURA8xgYktJY7a8wSD4V2X0RRFb3hgV4y+FVLdzU0rLx46hwgz8pwvYi+ddnuRjTmMpmwiUPLukreozHBmZS68vk53w24S8dDxEhgysbNSqm4D51sdUFCojXAlNqfEkVLzFQYjg+J3EeH8bFkFsf+g+tf47pR8dGNMHSTr3r5Gc0tY52uqiDf21PJWktvs00Gi3brrV7CPJVOkJZH4Pwg0+8yDnkP1i8MmfBW+NZ9eUoUwgQJN0h292w=
