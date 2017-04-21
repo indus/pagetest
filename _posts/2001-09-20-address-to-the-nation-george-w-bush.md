@@ -10,7 +10,7 @@ by George W. Bush on September 20, 2001
 
 Mr. Speaker, Mr. President Pro Tempore, members of Congress, and fellow Americans:
 
-In the normal course of events, Presidents come to this chamber to report on the state of the Union. Tonight, no such report is needed. It has already been delivered by the American people.
+In the course of events, Presidents come to this chamber to report on the state of the Union. Tonight, no such report is needed. It has already been delivered by the American people.
 
 We have seen it in the courage of passengers, who rushed terrorists to save others on the ground -- passengers like an exceptional man named Todd Beamer. And would you please help me to welcome his wife, Lisa Beamer, here tonight. (Applause.)
 
